@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 
 function TopMenu({imagem}){
   return(
@@ -50,4 +50,14 @@ export default function MenuLateral(){
       </div>
     </div> 
     );
+}
+
+// Usando o prop-types para restringir a entrada das props 
+TopMenu.PropTypes ={
+  imagem: PropTypes.string.isRequired
+}
+ElementosLinha.PropTypes = {
+  nome: PropTypes.string.isRequired,
+  caminho: PropTypes.string.isRequired,
+  imagem: PropTypes.string.isRequired
 }
