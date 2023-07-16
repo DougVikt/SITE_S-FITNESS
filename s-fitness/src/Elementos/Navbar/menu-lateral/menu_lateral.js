@@ -53,10 +53,10 @@ export default function MenuLateral(){
 }
 
 // Usando o prop-types para restringir a entrada das props 
-TopMenu.PropTypes ={
+TopMenu.propTypes ={
   imagem: PropTypes.string.isRequired
 }
-ElementosLinha.PropTypes = {
+ElementosLinha.propTypes = {
   nome: PropTypes.string.isRequired,
   caminho: PropTypes.string.isRequired,
   imagem: PropTypes.string.isRequired
